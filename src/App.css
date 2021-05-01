@@ -1,0 +1,116 @@
+.text-heading {
+    color: rgba(105, 105, 105, 1);
+}
+
+.text-body {
+    color: rgba(158, 158, 158, 1);
+}
+
+.backgroundColor-gray {
+    background-color: rgba(235, 235, 235, 1);
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    flex: 1;
+}
+
+.backgroundColor-green {
+    background-color: rgba(66, 144, 29, 1);
+}
+
+.color-white {
+    color: #fff;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.float-right {
+    float: right;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.mt-20 {
+    margin-top: 50px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.ml-40 {
+    margin-left: 40px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+textarea {
+    font-family: inherit;
+    resize: none;
+ }
+
+.input {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.inputContainer {
+    background-color: #fff;
+    padding: 10px;
+}
+
+button {
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.w-200 {
+    width: 200px;
+}

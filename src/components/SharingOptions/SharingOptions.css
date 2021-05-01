@@ -1,0 +1,19 @@
+.emailButton {
+    background-color: rgba(137, 137, 137, 1);
+}
+
+.facebookButton {
+    background-color: rgba(23, 77, 152, 1);
+}
+
+.twitterButton {
+    background-color: rgba(47, 140, 227, 1);
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid rgba(137, 137, 137, 1);
+  }

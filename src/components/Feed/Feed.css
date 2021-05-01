@@ -1,0 +1,9 @@
+.emojiDiv {
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.feed > div {
+    padding: 10px;
+}

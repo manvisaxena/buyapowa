@@ -2,6 +2,8 @@ import './ReferralWindow.css';
 import LinkSharer from '../LinkSharer/LinkSharer.js';
 import ActivityFeed from '../ActivityFeed/ActivityFeed.js';
 import ShareBox from '../ShareBox/ShareBox.js';
+import MyContext from '../../MyContext';
+import { Fragment } from 'react';
 
 function ReferralWindow() {
   return (
@@ -20,6 +22,10 @@ function ReferralWindow() {
         <div className="col" >
           <ShareBox />
         </div>
+      </div>
+
+      <div>
+      
       </div>
     </div>
   );

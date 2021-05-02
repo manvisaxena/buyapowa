@@ -8,7 +8,7 @@ function Feed(props) {
           <div className="emojiDiv" >
             {props.feed.emoji}
           </div>
-          <div className="col" >
+          <div className="col">
             {props.feed.text}
           </div>
         </div>

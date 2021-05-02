@@ -1,39 +1,30 @@
-import {useEffect, useState, React} from 'react';
+import {useEffect, useState, React, Fragment, useContext} from 'react';
 import './ActivityFeed.css';
 import Feed from '../Feed/Feed.js';
+import MyContext from '../../MyContext';
 
 function ActivityFeed() {
-    const [awardCount, setAwardCount] = useState(0)
-    const [feeds, setFeeds] = useState([
-        {
-            "emoji": "😃",
-            "text": "Your friend Mikey earned you a reward!"
-        },
-        {
-            "emoji": "😱",
-            "text": "A friend visited your link, but didn't earn you a reward!"
-        },
-        {
-            "emoji": "😳",
-            "text": "You tried to refer yourself! Whoops!"
-        }
-    ])
 
   return (
         <div>
-            <div className="p-20 backgroundColor-gray text-heading bold" >
-                Activity Feed
-            </div>
-            <div className="feedContainer" >
-            {
-                feeds.map((feed, index) => (
-                    <Feed key={index} feed={feed} />
-                ))
-            }
-            </div>
-            <div className="p-20 backgroundColor-gray text-heading bold display-flex flex-end" >
-                Total Rewards&nbsp;<span className="text-heading bold" >{awardCount}</span>
-            </div>
+            <MyContext.Consumer>
+                { context => (<Fragment>
+                        <div className="p-20 backgroundColor-gray text-heading bold" >
+                            Activity Feed
+                        </div>
+                        <div className="feedContainer" data-testid='feedlist'>
+                            {
+                                Object.keys(context.activityFeed).map((feed, index) => (
+                                    <Feed key={index} feed={context.activityFeed[feed]}  />
+                                ))
+                            }
+                        </div>
+                        <div className="p-20 backgroundColor-gray text-heading bold display-flex flex-end" >
+                            Total Rewards&nbsp;<span className="text-heading bold" > {context.totalReward} </span>
+                        </div>
+                    </Fragment>)
+                }
+            </MyContext.Consumer>
         </div>
   );
 }

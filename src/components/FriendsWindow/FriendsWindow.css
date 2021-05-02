@@ -1,0 +1,23 @@
+.friendWindow {
+    display: block;
+    width: 80%;   
+}
+
+.friendWindow button{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.show{
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hide{
+    display: none;
+}
